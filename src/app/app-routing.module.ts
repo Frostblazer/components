@@ -5,6 +5,18 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
+    path: 'collections',
+    loadChildren: () =>
+      import('./collections/collections.module').then(
+        (m) => m.CollectionsModule
+      ),
+  },
+  {
+    path: 'elements',
+    loadChildren: () =>
+      import('./elements/elements.module').then((m) => m.ElementsModule),
+  },
+  {
     path: '',
     component: HomeComponent,
   },
