@@ -8,9 +8,10 @@ import { SharedModule } from '../shared/shared.module';
 import { BiographyComponent } from './collections/biography/biography.component';
 import { CompaniesComponent } from './collections/companies/companies.component';
 import { PartnersComponent } from './collections/partners/partners.component';
+import { TabsComponent } from './collections/tabs/tabs.component';
 
 @NgModule({
-  declarations: [CollectionsHomeComponent, TableComponent, BiographyComponent, CompaniesComponent, PartnersComponent],
+  declarations: [CollectionsHomeComponent, TableComponent, BiographyComponent, CompaniesComponent, PartnersComponent, TabsComponent],
   imports: [CommonModule, CollectionsRoutingModule, SharedModule]
 })
 export class CollectionsModule {}
